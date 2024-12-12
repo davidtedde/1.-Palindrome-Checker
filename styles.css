@@ -1,0 +1,113 @@
+body {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 30%,
+    rgb(10, 10, 84) 98%
+  );
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Imposta l'altezza a 100% della finestra */
+  margin: 0;
+  font-family: Montserrat;
+}
+
+#journey {
+  font-size: 12px;
+}
+
+.palindrome-check-logo {
+  width: 150px;
+}
+
+.result-div hidden {
+  display: none;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.palindrome-div {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 30%,
+    rgb(10, 10, 84) 98%
+  );
+  height: 300px;
+  width: 550px;
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-direction: column; /* Posiziona gli elementi verticalmente */
+  margin: auto;
+  border-radius: 20px;
+}
+.input-button-container {
+  display: flex; /* Input e pulsante sulla stessa riga */
+  gap: 10px;     /* Spazio tra input e pulsante */
+}
+
+.palindrome-div label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.input-button-container {
+  display: flex; /* Posiziona input e pulsante sulla stessa riga */
+ 
+
+}
+.palindrome-input {
+  height: 40px;
+  width: 250px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.palindrome-btn {
+  background-color: blueviolet;
+  color: white;
+  padding: 14px 15px;
+  font-size: 20px;
+;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.results-div-success {
+  color: green;
+}
+.results-div-insuccess {
+  color: red;
+}
+
+.emoji img{
+  width: 50px;
+  height: 50px;
+  margin: 15px auto;
+}
+
+.hidden-emoji {
+display: none;
+}
+
+.palindrome-definition-div {
+  width: 520px;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 5%,
+    rgb(10, 10, 84) 98%
+  );
+  border-radius: 20px;
+  padding: 15px;
+  margin-top:40px ;
+}
