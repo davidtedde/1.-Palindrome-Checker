@@ -1,61 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="favicon-alien.ico"
-    />
+    <link rel="icon" type="image/png" href="favicon-alien.ico" />
     <title>Palindrome Checker - David's Road to development</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-
   </head>
   <body>
     <main class="container">
       <img
         class="palindrome-check-logo"
         src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
-        alt="freeCodeCamp Logo"
-      />
-      <div id="journey"> David's journey to becoming a programmer </div>
+        alt="freeCodeCamp Logo" />
+      <div id="journey">David's journey to becoming a programmer</div>
       <h1 class="title">Is it a Palindrome?</h1>
-      
+
       <div class="palindrome-div">
-                <label for="text-input">
-            Enter in text to check for a palindrome:
+        <label for="text-input">
+          Enter in text to check for a palindrome:
         </label>
         <div class="input-button-container">
-            <input class="palindrome-input" id="text-input" value="" type="text" />
-            <button class="palindrome-btn" id="check-btn">Check</button>
+          <input
+            class="palindrome-input"
+            id="text-input"
+            value=""
+            type="text" />
+          <button class="palindrome-btn" id="check-btn">Check</button>
         </div>
         <div class="results-div" id="result"></div>
         <picture class="emoji" id="no-input">
-            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.webp" type="image/webp">
-            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif" alt="🤔" width="32" height="32">
+          <source
+            srcset="
+              https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.webp
+            "
+            type="image/webp" />
+          <img
+            src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f914/512.gif"
+            alt="🤔"
+            width="50"
+            height="50" />
+        </picture>
+        <picture class="emoji hidden-emoji" id="is-palindrome-input">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f44d/512.webp
+              "
+              type="image/webp" />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44d/512.gif"
+              alt="👍"
+              width="50"
+              height="50" />
           </picture>
-          <picture class="emoji hidden-emoji" id="is-palindrome-input">
-            <picture>
-                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44d/512.webp" type="image/webp">
-                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44d/512.gif" alt="👍" width="32" height="32">
-              </picture>
-          </picture>
-          <picture class="emoji hidden-emoji" id="is-not-palindrome-input">
-            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44e/512.webp" type="image/webp">
-            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44e/512.gif" alt="👎" width="32" height="32">
-          </picture>
-    </div>
+        </picture>
+        <picture class="emoji hidden-emoji" id="is-not-palindrome-input">
+          <source
+            srcset="
+              https://fonts.gstatic.com/s/e/notoemoji/latest/1f44e/512.webp
+            "
+            type="image/webp" />
+          <img
+            src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44e/512.gif"
+            alt="👎"
+            width="50"
+            height="50" />
+        </picture>
+      </div>
 
       <div class="palindrome-definition-div">
         <p class="palindrome-definition">
-         <span role="img" aria-label="curiosity-emoji">&#129488</span>
-A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+          <span role="img" aria-label="curiosity-emoji">&#129488 </span>
+          A <dfn>palindrome</dfn> is a word or sentence that's spelled the same
+          way both forward and backward, ignoring punctuation, case, and
+          spacing.
         </p>
       </div>
     </main>
